@@ -284,16 +284,6 @@ body .container input[type='checkbox']:checked:after {
 */
 /* Product filters
 */
-/* Home > Menu list item 
-*/
-/* List arrow, trigger 
-*/
-/* A simple list first used at Intro > Premium 
-*/
-/* A simple list first used at Intro > Categories 
-*/
-/* A dynamic list first used at Intro > Services 
-*/
 /* Search
 /* ------------------------------------------------------
 */
@@ -321,14 +311,18 @@ body .container #header hgroup h2 {
   padding-top: 0;
   color: #999999;
 }
+/* line 26, layout.scss */
+body .container #footer {
+  margin: 2.5em 0;
+}
 
 /* line 9, article.scss */
 body .container #content article .entry a, body .container #content article .entry a:hover, body .container #content article .entry a:active {
   color: #1a1a1a;
-  border-bottom: 1px solid;
+  border-bottom: 1px dotted;
 }
 /* line 12, article.scss */
 body .container #content article .entry a:visited {
   color: #999999;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px dotted #999999;
 }
