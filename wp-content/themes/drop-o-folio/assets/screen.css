@@ -326,13 +326,3 @@ body .container #content article .entry a:visited {
   color: #999999;
   border-bottom: 1px dotted #999999;
 }
-/* line 16, article.scss */
-body .container #content article .entry ul {
-  list-style-type: none;
-}
-/* line 108, theme.scss */
-body .container #content article .entry ul li {
-  padding-bottom: 0.3125em;
-  margin-bottom: 0.3125em;
-  border-bottom: 1px dotted;
-}
