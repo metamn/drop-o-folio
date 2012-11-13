@@ -1,0 +1,9 @@
+.htaccess
+*.log
+wp-content/cache/
+wp-content/backups/
+sitemap.xml
+sitemap.xml.gz
+
+wp-content/themes/drop-o-folio/.sass-cache
+
