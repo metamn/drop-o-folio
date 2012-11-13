@@ -64,6 +64,16 @@ $color-action: #9173FF; /* FF3, Kuler, Compound */
 /* Links
 */
 
+@mixin link {
+	color: $color-text;
+	border-bottom: 1px solid;
+}
+@mixin link-visited {
+	color: $color-text-light;
+	border-bottom: 1px solid $color-text-light;
+}
+
+
 @mixin link-neutral {
 	color: $color-text;
 	text-decoration: none;
