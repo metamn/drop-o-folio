@@ -57,8 +57,13 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<h2><?php bloginfo( 'description' ); ?></h2> 
 					</a>
-          
-        </hgroup>  
+        </hgroup>
+        
+        <nav>
+        	<ul>
+        		<?php wp_list_categories('title_li='); ?>
+        	</ul>
+        </nav>
       </header>
     
     	

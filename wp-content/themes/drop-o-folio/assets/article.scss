@@ -12,6 +12,10 @@ body {
 					a:visited {
 						@include link-visited;
 					}
+					
+					ul {
+						@include list-underlined;
+					}
 				}
 			}
 		}
