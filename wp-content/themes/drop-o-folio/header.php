@@ -47,18 +47,17 @@
     
     <div class="container">
     
-      <header>
+      <header id="header">
         <hgroup>
-          <h1>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-            	<?php bloginfo( 'name' ); ?>
-            </a>
-          </h1>
-          <h2>
-          	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-             <?php bloginfo( 'description' ); ?>
-            </a>
-          </h2> 
+          
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<h1><?php bloginfo( 'name' ); ?></h1>
+					</a>
+          
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<h2><?php bloginfo( 'description' ); ?></h2> 
+					</a>
+          
         </hgroup>  
       </header>
     

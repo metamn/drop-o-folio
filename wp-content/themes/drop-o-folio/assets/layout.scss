@@ -1,0 +1,28 @@
+body {
+
+	background: $color-background;
+	color: $color-text;
+	
+	a {
+		@include link-neutral;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		
+		#header {
+			hgroup{
+				h1 {
+					padding-bottom: 0;
+				}	
+				h2 {
+					padding-top: 0;
+					color: $color-text-light;
+				}
+			}
+		}
+		
+	}
+
+}
