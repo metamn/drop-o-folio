@@ -182,13 +182,13 @@ body .container input, body .container textarea {
   font-family: monospace;
 }
 /* line 174, typography.scss */
-body .container input[type='text'] {
+body .container input[type='text'], body .container input[type='password'] {
   border-bottom: 1px solid;
   font-style: italic;
   color: gray;
 }
 /* line 179, typography.scss */
-body .container input[type='text']:focus {
+body .container input[type='text']:focus, body .container input[type='password']:focus {
   color: black;
   font-style: normal;
 }
@@ -215,7 +215,7 @@ body .container input[type='radio']:checked:after {
 /* line 206, typography.scss */
 body .container input[type='checkbox']:after {
   content: '\272A';
-  margin-right: 0.3125em;
+  margin-right: 0.15625em;
   font-size: 200%;
   line-height: .5;
   vertical-align: top;
@@ -266,7 +266,7 @@ body .container input[type='checkbox']:checked:after {
 /* Highlight 
 */
 /* FF3, Kuler, Mono */
-/* line 31, theme.scss */
+/* line 35, theme.scss */
 .highlight {
   background: #ffff33;
   padding: 0.3125em;
@@ -277,15 +277,7 @@ body .container input[type='checkbox']:checked:after {
 /* FF3, Kuler, Compound */
 /* Links
 */
-/* Backgrounds
-*/
 /* Lists
-/* ------------------------------------------------------
-*/
-/* Product filters
-*/
-/* Search
-/* ------------------------------------------------------
 */
 /* line 1, layout.scss */
 body {
@@ -312,17 +304,73 @@ body .container #header hgroup h2 {
   color: #999999;
 }
 /* line 26, layout.scss */
+body .container #header nav ul {
+  display: block;
+  margin: 0;
+}
+/* line 58, mixins.scss */
+body .container #header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 29, layout.scss */
+body .container #header nav ul li {
+  border: 1px solid;
+  padding: 0.625em;
+  box-shadow: 2px 2px 0 #1a1a1a;
+  margin-right: 1.25em;
+}
+/* line 97, theme.scss */
+body .container #header nav ul li:hover {
+  background: #ffff33;
+}
+/* line 33, layout.scss */
+body .container #header nav ul li.current-cat {
+  background: #ffff33;
+}
+/* line 40, layout.scss */
 body .container #footer {
   margin: 2.5em 0;
 }
 
 /* line 9, article.scss */
-body .container #content article .entry a, body .container #content article .entry a:hover, body .container #content article .entry a:active {
-  color: #1a1a1a;
-  border-bottom: 1px dotted;
+body .container #content article .entry a {
+  border: 1px solid;
+  padding: 0.625em;
+  box-shadow: 2px 2px 0 #1a1a1a;
 }
-/* line 12, article.scss */
-body .container #content article .entry a:visited {
-  color: #999999;
-  border-bottom: 1px dotted #999999;
+/* line 97, theme.scss */
+body .container #content article .entry a:hover {
+  background: #ffff33;
+}
+/* line 13, article.scss */
+body .container #content article .entry .wpmem_msg {
+  text-align: left;
+}
+/* line 17, article.scss */
+body .container #content article .entry #wpmem_reg a[name="register"], body .container #content article .entry #wpmem_reg div[align="center"], body .container #content article .entry #wpmem_reg .req, body .container #content article .entry #wpmem_reg a[name="login"], body .container #content article .entry #wpmem_login a[name="register"], body .container #content article .entry #wpmem_login div[align="center"], body .container #content article .entry #wpmem_login .req, body .container #content article .entry #wpmem_login a[name="login"] {
+  display: none;
+}
+/* line 23, article.scss */
+body .container #content article .entry #wpmem_reg form fieldset legend, body .container #content article .entry #wpmem_login form fieldset legend {
+  display: none;
+}
+/* line 26, article.scss */
+body .container #content article .entry #wpmem_reg form fieldset label, body .container #content article .entry #wpmem_login form fieldset label {
+  width: 20%;
+  margin-right: 5%;
+  float: left;
+}
+/* line 31, article.scss */
+body .container #content article .entry #wpmem_reg form fieldset .div_text, body .container #content article .entry #wpmem_login form fieldset .div_text {
+  width: 75%;
+  float: left;
+  margin-bottom: 1.25em;
+}
+/* line 36, article.scss */
+body .container #content article .entry #wpmem_reg form fieldset .button_div, body .container #content article .entry #wpmem_login form fieldset .button_div {
+  width: 75%;
+  float: left;
+  margin-left: 25%;
 }

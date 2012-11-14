@@ -21,6 +21,20 @@ body {
 					color: $color-text-light;
 				}
 			}
+			
+			nav {
+				ul {
+					@include list-inline;
+					
+					li {
+						@include link-button;
+						margin-right: $pad;
+					}
+					li.current-cat {
+						background: $color-highlight;
+					}
+				}
+			}
 		}
 		
 		#footer {

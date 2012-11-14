@@ -6,11 +6,40 @@ body {
 				}
 				
 				.entry {
-					a, a:hover, a:active {
-						@include link;
+					a {
+						@include link-button;
 					}
-					a:visited {
-						@include link-visited;
+					
+					.wpmem_msg {
+						text-align: left;
+					}
+					#wpmem_reg, #wpmem_login {
+						a[name="register"], div[align="center"], .req, a[name="login"] {
+							@include hidden;
+						}
+						
+						form {
+							fieldset {
+								legend {
+									@include hidden;
+								}
+								label {
+									width: 20%;
+									margin-right: 5%;
+									float: left;
+								}
+								.div_text {
+									width: 75%;
+									float: left;
+									margin-bottom: $pad;
+								}
+								.button_div {
+									width: 75%;
+									float: left;
+									margin-left: 25%;
+								}
+							}
+						}
 					}
 					
 				}

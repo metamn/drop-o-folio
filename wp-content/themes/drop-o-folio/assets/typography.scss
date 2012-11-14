@@ -171,12 +171,12 @@ body {
 		}
 		
 		// Text
-		input[type='text'] {
+		input[type='text'], input[type='password'] {
 			border-bottom: 1px solid;
 			font-style: italic;
 			color: gray;
 		}
-		input[type='text']:focus {
+		input[type='text']:focus, input[type='password']:focus {
 			color: black;
 			font-style: normal;
 		}
@@ -205,7 +205,7 @@ body {
 		// Checkbox 
 		input[type='checkbox']:after {
 			content: '\272A';
-			margin-right: $pad/4;
+			margin-right: $pad/8;
 			
 			// This glyph is too small, so grow it
 			font-size: 200%;

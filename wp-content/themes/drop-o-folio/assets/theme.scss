@@ -3,6 +3,8 @@
 */
 
 
+
+
 /* Text 
 */
 $color-background: white;
@@ -23,6 +25,8 @@ $color-text-light: lighten($color-text, 50%);
 }
 
 
+
+
 /* Highlight 
 */
 $color-highlight: lighten(yellow, 10%);
@@ -32,6 +36,8 @@ $color-highlight-light: #7F7F3F; /* FF3, Kuler, Mono */
 	background: $color-highlight;
 	padding: $pad/4;
 }
+
+
 
 
 /* Action 
@@ -84,22 +90,18 @@ $color-action: #9173FF; /* FF3, Kuler, Compound */
 	text-decoration: none;
 }
 
-
-/* Backgrounds
-*/
-
-@mixin background-stripe {
-	background: transparent url(stripe.png);
-}
+@mixin link-button {
+	border: 1px solid;
+	padding: $pad/2;
+	box-shadow: 2px 2px 0 $color-text;
+	&:hover {
+		background: $color-highlight;
+	}
+} 
 
 
 
 /* Lists
-/* ------------------------------------------------------
-*/
-
-
-/* Product filters
 */
 
 @mixin list-underlined {
@@ -114,17 +116,5 @@ $color-action: #9173FF; /* FF3, Kuler, Compound */
 
 
 
-
-
-/* Search
-/* ------------------------------------------------------
-*/
-
-
-@mixin search {
-	input[type='text'] {
-		@include col($major, 0, 5%);
-	}
-}
 
 
